@@ -1,6 +1,12 @@
 import "./navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/main-logo-images/navLogo.png";
 import { Link, NavLink } from "react-router-dom";
+
+/***************************************
+ *
+ * Navbar Component here
+ *
+ **************************************/
 
 const Navbar = () => {
   const handleKeyPress = (event) => {
