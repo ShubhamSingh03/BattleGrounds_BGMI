@@ -1,0 +1,50 @@
+/***************************************
+*
+* Footer component styles
+*
+****************************************/
+
+footer {
+  padding-top: 2rem;
+}
+
+.footer-logo-img {
+  width: 25%;
+}
+
+footer p {
+  text-align: center;
+  padding: 15px 0px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .footer-author-name {
+  color: #a3de83;
+  text-transform: capitalize;
+}
+
+footer a:hover,
+.footer-author-name:hover {
+  color: #ec6090;
+  transition: all 0.3s;
+}
+
+/************************************
+  *
+  * Media queries Footer 
+  *
+************************************/
+
+@media screen and (max-width: 700px) {
+  .footer-logo-img {
+    width: 55%;
+  }
+}
