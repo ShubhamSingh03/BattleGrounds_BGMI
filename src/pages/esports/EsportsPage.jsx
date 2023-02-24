@@ -34,7 +34,7 @@ const EsportsPage = () => {
                             alt="esports-banner-2"
                             style={{ borderRadius: "23px" }}
                           />
-                          <button onClick={handleModal}>
+                          <button>
                             <i className="fa fa-play"></i>
                           </button>
                         </div>
