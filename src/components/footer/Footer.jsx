@@ -12,28 +12,28 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-12 text-center">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-12 text-center">
               <img
                 src={footerLogo}
                 className="footer-logo-img"
                 alt="footer-logo"
               />
-              <p class="menu">
+              <p className="menu">
                 <NavLink to={"/"}> Home</NavLink>
                 <NavLink to={"/news"}> News </NavLink>
-                <NavLink> Esports </NavLink>
+                <NavLink to={"/esports"}> Esports </NavLink>
                 <NavLink> Streamers </NavLink>
                 <NavLink to={"/about"}>About us</NavLink>
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <p class="copyright">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <p className="copyright">
                 Copyright &copy; 2023 All rights reserved | Coded with{" "}
-                <i class="fa fa-heart" aria-hidden="true"></i> by:
+                <i className="fa fa-heart" aria-hidden="true"></i> by:
                 <a
                   className="footer-author-name"
                   href="https://shubhambhoj.in"
