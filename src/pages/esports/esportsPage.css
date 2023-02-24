@@ -1,0 +1,39 @@
+/*************************************** 
+*
+* Featured Banner styles
+*
+***************************************/
+
+.feature-banner .thumb {
+  position: relative;
+  max-height: 305px;
+  overflow: hidden;
+  border-radius: 23px;
+}
+
+.feature-banner .thumb button {
+  position: absolute;
+  left: 46%;
+  top: 45%;
+  width: 46px;
+  height: 46px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  color: #ec6090;
+  border: none;
+}
+
+/*********************************
+*
+* Responsive styles
+* 
+*********************************/
+
+@media (max-width: 992px) {
+  .feature-banner .thumb {
+    margin-top: 30px;
+  }
+}
