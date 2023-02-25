@@ -29,6 +29,32 @@ const AboutusPage = () => {
                   </div>
                 </div>
               </div>
+
+              {/*****************************
+               * Gaming Library here
+               *****************************/}
+
+              <div className="gaming-library">
+                <div className="col-lg-12">
+                  <div className="heading-section">
+                    <h4>
+                      <em>Other Games</em> Available
+                    </h4>
+                  </div>
+                  {gameDetails?.map((game, index) => (
+                    <GameDetailsItem
+                      key={index}
+                      gameImage={game.gameImage}
+                      gameName={game.gameName}
+                      gameCountry={game.gameCountry}
+                      launchDate={game.launchDate}
+                      totalDownloads={game.totalDownloads}
+                      publisher={game.publisher}
+                      downloadLink={game.downloadLink}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
