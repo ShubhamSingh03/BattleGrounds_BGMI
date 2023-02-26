@@ -1,0 +1,111 @@
+/*********************************************
+*
+* Esports top ranked teams card
+*
+*********************************************/
+.team-card {
+  width: 250px;
+  height: 250px;
+  /* transform: translate(-50%, -50%) translateZ(0); */
+  border-radius: 23px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.team-card .team-group-image {
+  width: auto;
+  height: 160px;
+  border-radius: 3px;
+}
+.team-card .team-info {
+  width: auto;
+  height: 350px;
+  position: relative;
+  padding: 14px 24px;
+  background: #27292a;
+  transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+.team-card .team-info .title {
+  position: relative;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Grotesque Black", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px #fff;
+}
+
+.team-card .team-info .subtitle {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #fff;
+  font-family: "Grotesque", sans-serif;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(250, 246, 246, 0.2);
+}
+
+.team-card .team-info .team-logo {
+  position: absolute;
+  top: 120%;
+  right: -15px;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 43px;
+  display: inline-block;
+}
+
+.team-card .team-info .player-names {
+  font-family: "Merriweather", sans-serif;
+  line-height: 2;
+  font-size: 0.95rem;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+.team-card:hover .team-info {
+  transform: translateY(-160px);
+}
+
+.team-card:hover .team-info .seats,
+.team-card:hover .team-info .player-names,
+.team-card:hover .team-info .details {
+  opacity: 1;
+}
+
+.team-card .team-info .player-names .player-names-role {
+  resize: both;
+  overflow: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.team-card .team-info .player-names .player-names-role tr:hover {
+  background-color: rgb(250, 250, 250);
+  color: #1f2122;
+}
+
+@media screen and (max-width: 375px) {
+  .team-card .team-info {
+    padding: 10px 24px;
+  }
+  .team-card .team-info .title {
+    letter-spacing: 0px;
+    font-size: 1rem;
+  }
+  .team-card .team-info .subtitle {
+    font-size: 0.65rem;
+    padding-bottom: 30px;
+  }
+  .team-card .team-info .team-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .team-card .team-info .subtitle {
+    display: none;
+  }
+}

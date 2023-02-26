@@ -1,0 +1,26 @@
+/********************************************
+*
+* Esports top ranked teams styles
+*
+********************************************/
+
+.other-games {
+  border-radius: 23px;
+  padding: 30px 30px 0px 30px;
+  background-color: #1f2122;
+  margin-top: 60px;
+}
+
+.other-games .tournament-participating-teams {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 770px) {
+  .other-games .tournament-participating-teams {
+    justify-content: center;
+    padding: 20px 0px;
+  }
+}
