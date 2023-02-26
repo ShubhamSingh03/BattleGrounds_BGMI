@@ -3,10 +3,13 @@ import React from "react";
 // styles
 import "./topCreatorsSlider.css";
 
-// Import Swiper React components
+// data
+import { topCreatorsData } from "../../../data/stream&streamersData";
+
+// Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+// Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -14,7 +17,7 @@ import { Autoplay, Mousewheel } from "swiper";
 
 /*****************************************
  *
- * Top creators Slider
+ * Top creators Slider here
  *
  ****************************************/
 
@@ -51,21 +54,23 @@ const TopCreatorsSlider = () => {
         }}
         className="mySwiper"
       >
-        {streamDetails.map((stream, index) => (
+        {topCreatorsData.map((creator, index) => (
           <SwiperSlide key={index}>
             <div class="item">
               <div class="thumb">
-                <img src={stream.streamersImage} alt="" />
+                <img
+                  src={creator.creatorImage}
+                  alt={`${creator.creatorGameName}-profile`}
+                />
                 <div class="hover-effect">
-                  <a href={stream.streamersInsta}>Instagram</a>
+                  <a href={creator.creatorInstaLink}>Instagram</a>
                 </div>
               </div>
-
               <h4>
-                {stream.streamersGame}
+                {creator.creatorGameName}
                 <br />
               </h4>
-              <span>{stream.streamerRealName}</span>
+              <span>{creator.creatorRealName}</span>
             </div>
           </SwiperSlide>
         ))}
