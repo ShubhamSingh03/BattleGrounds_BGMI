@@ -1,0 +1,100 @@
+/**********************************************
+*
+* Tournament Game Details styles
+*
+***********************************************/
+
+/* Style for the horizontal scrollbar */
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.game-details h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 60px 0px;
+}
+
+.game-details .content {
+  border-radius: 23px;
+  padding: 30px;
+  background-color: #1f2122;
+}
+
+.game-details .content .left-info,
+.game-details .content .right-info,
+.game-details .content .prize-pool-info,
+.game-details .content .player-awards-info,
+.game-details .content .team-awards-info {
+  background-color: #27292a;
+  border-radius: 23px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.points-table,
+.schedule-table,
+.prize-pool-info-table,
+.player-awards-info-table,
+.team-awards-info-table {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.game-details .content .left-info .left {
+  float: left;
+}
+
+.game-details .content .left-info h4,
+.game-details .content .right-info h4,
+.game-details .content .prize-pool-info h4,
+.game-details .content .player-awards-info h4 {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.game-details .content .prize-pool-info p {
+  margin-bottom: 15px;
+}
+
+.points-table tbody tr td:last-child {
+  background-color: #e2e3e5;
+}
+
+.schedule-table th,
+.schedule-table td:first-child,
+.points-table th,
+td:first-child {
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.prize-pool-info-table th,
+.prize-pool-info-table td,
+.player-awards-info-table th,
+.player-awards-info-table td,
+.team-awards-info-table th,
+.team-awards-info-table td {
+  border-right: 1px solid #ccc;
+}
+
+.player-awards-info-table .team-logo-img,
+.team-awards-info-table .team-logo-img {
+  width: 20px;
+  height: 20px;
+}
