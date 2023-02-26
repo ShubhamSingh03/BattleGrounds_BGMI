@@ -1,3 +1,8 @@
+/*************************************
+ *
+ *  Game details Data
+ *
+ ************************************/
 export const gameDetailsData = [
   {
     gameImage: require("../assets/games-logos/pubgLogo.jpg"),
