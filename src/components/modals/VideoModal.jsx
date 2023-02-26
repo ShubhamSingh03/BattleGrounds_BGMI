@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
+// styles
 import "./videoModal.css";
 
 // react-icons
-import { IoCloseOutline } from "react-icons/io5";
-import { BiLoaderAlt } from "react-icons/bi";
+// import { IoCloseOutline } from "react-icons/io5";
+// import { BiLoaderAlt } from "react-icons/bi";
 
 /***************************************
  *
@@ -22,15 +24,20 @@ const VideoModal = (props) => {
       <div className="videoModal-section">
         <div className="videoModal-section-container">
           <div className="videoModal-section-container-content">
-            <IoCloseOutline
+            {/* <IoCloseOutline
               className="modal-close-btn"
               arial-label="Close modal"
               onClick={props.handleModal}
-            />
+            /> */}
+            <i
+              className="fa fa-close modal-close-btn"
+              arial-label="Close modal"
+              onClick={props.handleModal}
+            ></i>
             <div className="videoModal-section-videocontainer">
               {videoLoading ? (
                 <div className="videoModal-section-videocontainer-loader">
-                  <BiLoaderAlt className="animate-spin" />
+                  <i className="fa fa-loader animate-spin"></i>
                 </div>
               ) : null}
               <iframe
