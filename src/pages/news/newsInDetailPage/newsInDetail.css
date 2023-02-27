@@ -1,0 +1,46 @@
+/*************************************
+ *
+ * News in detail styles
+ *
+ ************************************/
+.news-goBack {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-heading {
+  padding: 10px 0;
+}
+
+.news-details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-weight: bolder;
+}
+
+.news-in-detail {
+  padding: 20px 0 0 5px;
+  position: relative;
+}
+.news-in-detail p,
+.news-in-detail li {
+  margin: 20px auto;
+  position: relative;
+  color: #777;
+}
+
+.news-in-detail li {
+  padding-left: 5px;
+  list-style: inside;
+}
+
+@media (max-width: 700px) {
+  .news-goBack {
+    padding-top: 4px;
+  }
+  .news-details {
+    display: flex;
+    flex-direction: column;
+  }
+}
