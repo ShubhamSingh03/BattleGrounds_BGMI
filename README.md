@@ -16,7 +16,7 @@ The streamers page features video clips of popular streamers and creators of Bat
 
 - ### 📌 [LIVE Project Link]()
 
-- ### 📌 [YouTube Link]()
+- ### 📌 [YouTube Link](https://youtu.be/6jJogCqIZT0)
 
 ## Tech Stack Used
 
@@ -49,6 +49,8 @@ The streamers page features video clips of popular streamers and creators of Bat
 ![Streamers Page](./src/assets/screencaptures/streamers-page-screenshot.png)
 
 ### [VISIT WEBSITE HERE]()
+
+### [WATCH DEMO HERE](https://youtu.be/6jJogCqIZT0)
 
 ## Important Infomartion regarding Images & Content
 
