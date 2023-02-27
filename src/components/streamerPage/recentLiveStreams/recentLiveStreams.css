@@ -1,0 +1,141 @@
+/*******************************************
+*
+* Recent Live Stream styles
+*
+*******************************************/
+
+.live-stream {
+  margin-top: 60px;
+  border-radius: 23px;
+  background-color: #1f2122;
+  padding: 30px;
+}
+
+.live-stream .item {
+  margin-bottom: 40px;
+}
+
+.live-stream .thumb {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 23px;
+}
+
+.live-stream .thumb .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.live-stream .thumb .video-container:hover iframe {
+  display: block;
+  transition: img 0.5s ease-in-out;
+}
+
+.live-stream .thumb .video-container a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.live-stream .thumb:hover .hover-effect {
+  opacity: 1;
+  visibility: visible;
+}
+
+.live-stream .hover-effect {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+.live-stream .hover-effect .live p {
+  position: absolute;
+  background-color: rgba(236, 96, 144, 0.9);
+  padding: 1px 12px;
+  border-radius: 23px;
+  color: #fff;
+  font-size: 14px;
+  right: 15px;
+  top: 15px;
+}
+
+.live-stream .hover-effect ul {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.live-stream .hover-effect ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.live-stream .hover-effect ul li p {
+  background-color: rgba(236, 96, 144, 0.9);
+  padding: 1px 14px;
+  border-radius: 23px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.live-stream .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 18px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.live-stream .avatar img {
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.live-stream span {
+  font-size: 12px;
+  color: #ec6090;
+}
+
+.live-stream span i {
+  color: #fff;
+  background-color: #ec6090;
+  border-radius: 50%;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  margin-right: 3px;
+}
+
+.live-stream .down-content h4 {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 61px;
+}
+
+.live-stream .main-button {
+  text-align: center;
+  margin-bottom: -53px;
+}
+
+@media (max-width: 400px) {
+  .live-stream .down-content h4 {
+    font-size: 13px;
+  }
+}
