@@ -31,14 +31,6 @@ const Loader = () => {
         }, 400);
       }
     );
-
-    // Parallax effect on .cover element
-    if ($(".cover").length) {
-      $(".cover").parallax({
-        imageSrc: $(".cover").data("image"),
-        zIndex: "1",
-      });
-    }
   }, []);
 
   return (
