@@ -25,10 +25,10 @@ const EsportsTournamentDetails = () => {
                      * Points distribution table
                      ****************************** */}
                     <h4>Points Distribution</h4>
-                    <table class="table points-table text-center table-primary">
+                    <table className="table points-table text-center table-primary">
                       <thead>
                         <tr>
-                          <th colspan="2">Points Distribution</th>
+                          <th colSpan="2">Points Distribution</th>
                         </tr>
                         <tr className="table-secondary">
                           <th>Finish Points</th>
@@ -41,7 +41,7 @@ const EsportsTournamentDetails = () => {
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="table-danger">1st</td>
+                          <td className="table-danger">1st</td>
                           <td>15</td>
                         </tr>
                         <tr>
@@ -86,7 +86,7 @@ const EsportsTournamentDetails = () => {
                    ****************************** */}
                   <div className="right-info table-responsive">
                     <h4>Tournament Schedule </h4>
-                    <table class="table schedule-table text-center table-primary">
+                    <table className="table schedule-table text-center table-primary">
                       <thead>
                         <tr>
                           <th className="w-45">Week #</th>
@@ -96,17 +96,17 @@ const EsportsTournamentDetails = () => {
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td class="table-warning">Dec 19th - Dec 22nd</td>
+                          <td className="table-warning">Dec 19th - Dec 22nd</td>
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td class="table-warning">Dec 26th - Dec 29th</td>
+                          <td className="table-warning">Dec 26th - Dec 29th</td>
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td class="table-warning">Jan 2nd - Jan 5th</td>
+                          <td className="table-warning">Jan 2nd - Jan 5th</td>
                         </tr>
-                        <tr class="table-danger">
+                        <tr className="table-danger">
                           <td>Grand Finals</td>
                           <td>Jan 9th - Jan 12th</td>
                         </tr>
@@ -118,7 +118,7 @@ const EsportsTournamentDetails = () => {
                    * Awards table
                    ****************************** */}
                   <div className="team-awards-info table-responsive">
-                    <table class="table team-awards-info-table text-center table-primary">
+                    <table className="table team-awards-info-table text-center table-primary">
                       <thead>
                         <tr>
                           <th>Award</th>
@@ -178,7 +178,7 @@ const EsportsTournamentDetails = () => {
                       ₹2,00,00,000 INR ( ≃ $261,290 USD ) are spread among the
                       teams as seen below:
                     </p>
-                    <table class="table prize-pool-info-table text-center table-secondary">
+                    <table className="table prize-pool-info-table text-center table-secondary">
                       <thead>
                         <tr>
                           <th>Place</th>
@@ -250,7 +250,7 @@ const EsportsTournamentDetails = () => {
                    ****************************** */}
                   <div className="player-awards-info table-responsive">
                     <h4> Player Awards </h4>
-                    <table class="table player-awards-info-table text-center table-primary">
+                    <table className="table player-awards-info-table text-center table-primary">
                       <thead>
                         <tr>
                           <th>Award</th>
