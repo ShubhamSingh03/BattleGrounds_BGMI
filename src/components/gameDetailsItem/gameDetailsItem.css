@@ -52,3 +52,16 @@
   color: #666;
   font-size: 14px;
 }
+
+/* Responsive Syles */
+
+@media screen and (max-width: 350px) {
+  .gaming-library .item ul li h4 {
+    font-size: 13px;
+  }
+
+  .gaming-library .item ul li span {
+    color: #666;
+    font-size: 13px;
+  }
+}

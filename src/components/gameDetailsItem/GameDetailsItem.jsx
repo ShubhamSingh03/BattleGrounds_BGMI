@@ -1,4 +1,6 @@
 import React from "react";
+
+// styles
 import "./gameDetailsItem.css";
 
 /************************************
@@ -18,10 +20,16 @@ const GameDetailsItem = ({
 }) => {
   return (
     <>
+      {/* game individual item */}
       <div className="item text-center">
         <ul>
           <li>
-            <img src={gameImage} alt="" className="templatemo-item" />
+            <img
+              src={gameImage}
+              alt=""
+              className="templatemo-item"
+              title={`${gameName}`}
+            />
           </li>
           <li>
             <h4>{gameName}</h4>
