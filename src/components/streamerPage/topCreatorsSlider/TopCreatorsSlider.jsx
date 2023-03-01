@@ -1,7 +1,7 @@
 import React from "react";
 
 // styles
-import "./topCreatorsSlider.css";
+import "./topCreatorSlider.css";
 
 // data
 import { topCreatorsData } from "../../../data/stream&streamersData";
@@ -56,13 +56,13 @@ const TopCreatorsSlider = () => {
       >
         {topCreatorsData.map((creator, index) => (
           <SwiperSlide key={index}>
-            <div class="item">
-              <div class="thumb">
+            <div className="item">
+              <div className="thumb">
                 <img
                   src={creator.creatorImage}
                   alt={`${creator.creatorGameName}-profile`}
                 />
-                <div class="hover-effect">
+                <div className="hover-effect">
                   <a href={creator.creatorInstaLink}>Instagram</a>
                 </div>
               </div>
