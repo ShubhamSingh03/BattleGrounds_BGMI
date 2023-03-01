@@ -1,6 +1,16 @@
 import React from "react";
+
+// styles
 import "./mainProfile.css";
+
+// image
 import bgmiLogo from "../../../assets/games-logos/bgmiLogo.jpg";
+
+/*******************************************
+ *
+ * Main-Profile component
+ *
+ *******************************************/
 
 const MainProfile = () => {
   return (
