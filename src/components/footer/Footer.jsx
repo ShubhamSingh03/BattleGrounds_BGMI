@@ -1,5 +1,12 @@
-import { NavLink } from "react-router-dom";
+import React from "react";
+
+// styles
 import "./footer.css";
+
+// react-router
+import { NavLink } from "react-router-dom";
+
+// images
 import footerLogo from "../../assets/main-logo-images/footerLogo.png";
 
 /**********************************************
@@ -23,8 +30,8 @@ const Footer = () => {
               <p className="menu">
                 <NavLink to={"/"}> Home</NavLink>
                 <NavLink to={"/news"}> News </NavLink>
-                <NavLink to={"/esports"}> Esports </NavLink>
-                <NavLink> Streamers </NavLink>
+                <NavLink to={"/esports"}> E-sports </NavLink>
+                <NavLink to={"/streamers"}> Streamers </NavLink>
                 <NavLink to={"/about"}>About us</NavLink>
               </p>
             </div>
