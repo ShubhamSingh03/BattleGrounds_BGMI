@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // styles
 import "./videoModal.css";
 
 // react-icons
-// import { IoCloseOutline } from "react-icons/io5";
-// import { BiLoaderAlt } from "react-icons/bi";
+import { IoCloseOutline } from "react-icons/io5";
+import { BiLoaderAlt } from "react-icons/bi";
 
 /***************************************
  *
@@ -19,25 +19,25 @@ const VideoModal = (props) => {
   const spinner = () => {
     setVideoLoading(!videoLoading);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = "unset");
+  }, []);
   return (
     <>
       <div className="videoModal-section">
         <div className="videoModal-section-container">
           <div className="videoModal-section-container-content">
-            {/* <IoCloseOutline
+            <IoCloseOutline
               className="modal-close-btn"
               arial-label="Close modal"
               onClick={props.handleModal}
-            /> */}
-            <i
-              className="fa fa-close modal-close-btn"
-              arial-label="Close modal"
-              onClick={props.handleModal}
-            ></i>
+            />
             <div className="videoModal-section-videocontainer">
               {videoLoading ? (
                 <div className="videoModal-section-videocontainer-loader">
-                  <i className="fa fa-loader animate-spin"></i>
+                  <BiLoaderAlt className="animate-spin" />
                 </div>
               ) : null}
               <iframe
@@ -47,7 +47,7 @@ const VideoModal = (props) => {
                 width="800"
                 height="500"
                 src={`https://www.youtube.com/embed/${props.videoId}`}
-                title="YouTube video player"
+                title="Video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
