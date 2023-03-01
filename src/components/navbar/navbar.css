@@ -1,8 +1,8 @@
-/*******************************************
+/****************************************
 *
-* Header Component styles
+* Navbar styles
 *
-*******************************************/
+****************************************/
 
 .background-header {
   background-color: #fff !important;
@@ -274,10 +274,18 @@
   color: #fff;
 }
 
+.mobile-nav-menu {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .header-area .main-nav .logo {
+    margin-right: 30px;
+    border-right: none;
   }
   .header-area .main-nav:before {
     display: none;
@@ -285,8 +293,11 @@
 }
 
 @media (max-width: 992px) {
-  .header-area {
-    top: 0;
+  .header-area .main-nav #search {
+    display: none;
+  }
+  .heading-section h4 {
+    font-size: 20px;
   }
   .header-area .main-nav {
     background-color: transparent;
@@ -321,6 +332,7 @@
     width: 100%;
   }
   .header-area {
+    top: 0;
     background-color: transparent;
     padding: 0px 15px;
     height: 80px;
@@ -417,4 +429,61 @@
   .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+
+  .mobile-nav-menu {
+    position: fixed;
+    top: 0;
+    right: -55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 55%;
+    overflow: hidden;
+    padding: 80px 30px 30px;
+    background-color: #27292a;
+    /* background: url('') no-repeat top right center fixed; */
+    /* background-size: cover; */
+    z-index: -999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: right 1s ease-in-out !important;
+  }
+
+  .mobile-nav-menu li {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .mobile-nav-menu.open {
+    right: 0% !important;
+  }
+
+  .mobile-nav-menu a {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .mobile-nav-menu a:hover {
+    color: #e75e8d;
+  }
 }
+
+/* .nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 9999;
+  background-size: cover;
+  opacity: 0.9;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+} */
