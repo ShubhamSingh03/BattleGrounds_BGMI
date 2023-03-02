@@ -9,11 +9,12 @@ import streamersPageFavicon from "../../assets/favicons/streamers-page-favicon.i
 // common components
 import HeadingSection from "../../components/common/HeadingSection";
 import HelmetConsumer from "../../components/common/HelmetConsumer";
+import Loader from "../../components/common/loader/Loader";
 
 // streamers page component
-import MostPopularStreams from "../../components/StreamersPage/MostPopularStreams/MostPopularStreams";
-import TopCreatorsSlider from "../../components/StreamersPage/TopCreatorsSlider/TopCreatorsSlider";
-import TopStreamersCard from "../../components/StreamersPage/TopStreamersCard/TopStreamersCard";
+import TopCreatorsSlider from "../../components/streamerPage/topCreatorsSlider/TopCreatorsSlider";
+import TopStreamersList from "../../components/streamerPage/topStreamersList/TopStreamersList";
+import RecentLiveStream from "../../components/streamerPage/recentLiveStreams/RecentLiveStreams";
 
 /******************************************
  *
@@ -30,27 +31,43 @@ const StreamerPage = () => {
     <>
       <HelmetConsumer
         pageTitle={"Streamers & Creators | Battlegrounds Mobile India"}
-        pageFavicon={favicon}
+        pageFavicon={streamersPageFavicon}
       />
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-content">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="featured-games header-text">
+      <Loader />
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="page-content">
+              <div className="row">
+                <div className="col-lg-8">
+                  <div className="featured-games header-text">
                     <HeadingSection
                       firstTitle={"Top"}
                       secondTitle={" Creators"}
                     />
+                    {/*****************************
+                     *
+                     * creators slider component
+                     *
+                     *****************************/}
                     <TopCreatorsSlider />
                   </div>
                 </div>
 
-                <TopStreamersCard />
+                {/*****************************
+                 *
+                 * streamers list component
+                 *
+                 *****************************/}
+                <TopStreamersList />
               </div>
 
-              <MostPopularStreams />
+              {/*****************************
+               *
+               * recent live streams component
+               *
+               *****************************/}
+              <RecentLiveStream />
             </div>
           </div>
         </div>
