@@ -87,9 +87,9 @@ export const topStreamersData = [
   },
   {
     serialNumber: 3,
-    topStreamerImage: require("../assets/streamer&creators-images/streamers/top-streamer-scout.jpg"),
-    topStreamerName: "SCOUT",
-    topStreamerInstaLink: "https://www.instagram.com/scoutop",
+    topStreamerImage: require("../assets/streamer&creators-images/streamers/top-streamer-saumraj.jpg"),
+    topStreamerName: "SAUMRAJ",
+    topStreamerInstaLink: "https://www.instagram.com/saumraj117/",
   },
   {
     serialNumber: 4,
@@ -194,5 +194,102 @@ export const recentLiveStreamsData = [
     streamTopic: "BGMI 2021",
     streamerName: "BGMI Esports",
     streamTitle: "BMOC ROUND 4 - Day 1",
+  },
+];
+
+/*********************************
+ *
+ *  Home page Streamers data
+ *
+ ********************************/
+export const homeStreamersData = [
+  {
+    streamerName: "Mortal",
+    streamerImageSrc: require("../assets/streamer&creators-images/streamers/top-streamer-mortal.jpg"),
+    streamerOrg: "Soul Esports",
+    platformOneYt: "4.8",
+    platformTwoInsta: "3M",
+  },
+  {
+    streamerName: "Johnathan",
+    streamerImageSrc: require("../assets/streamer&creators-images/streamers/top-streamer-jhonny.jpg"),
+    streamerOrg: "Godlike Esports",
+    platformOneYt: "4M",
+    platformTwoInsta: "2M",
+  },
+  {
+    streamerName: "Snax",
+    streamerImageSrc: require("../assets/streamer&creators-images/streamers/top-streamer-snax.jpg"),
+    streamerOrg: "XO Esports",
+    platformOneYt: "3M",
+    platformTwoInsta: "200K",
+  },
+  {
+    streamerName: "Saumraj",
+    streamerImageSrc: require("../assets/streamer&creators-images/streamers/top-streamer-saumraj.jpg"),
+    streamerOrg: "SG Gaming",
+    platformOneYt: "2M",
+    platformTwoInsta: "500K",
+  },
+  {
+    streamerName: "Team S8UL",
+    streamerImageSrc: require("../assets/streamer&creators-images/streamers/top-streamer-mavi.jpg"),
+    streamerOrg: "",
+    platformOneYt: "",
+    platformTwoInsta: "",
+  },
+  {
+    streamerName: "Mavi",
+    streamerImageSrc: require("../assets/streamer&creators-images/streamers/top-streamer-mavi.jpg"),
+    streamerOrg: "Team X Spark",
+    platformOneYt: "3M",
+    platformTwoInsta: "1M",
+  },
+  {
+    streamerName: "Viper",
+    streamerImageSrc: require("../assets/streamer&creators-images/streamers/top-streamer-viper.jpg"),
+    streamerOrg: "S8ul Esports",
+    platformOneYt: "2M",
+    platformTwoInsta: "900K",
+  },
+];
+
+/***************************************
+ *
+ *  About page video CLips data details
+ *
+ ***************************************/
+export const videoClipsData = [
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/r9YZDRQVta8/maxresdefault.jpg",
+    videoClipLink: "r9YZDRQVta8",
+  },
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/vVo2rwVYKA4/maxresdefault.jpg",
+    videoClipLink: "vVo2rwVYKA4",
+  },
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/BTdYsXQlOZo/maxresdefault.jpg",
+    videoClipLink: "BTdYsXQlOZo",
+  },
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/RwM6auLpXXU/maxresdefault.jpg",
+    videoClipLink: "RwM6auLpXXU",
+  },
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/xxShT6zepRk/maxresdefault.jpg",
+    videoClipLink: "xxShT6zepRk",
+  },
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/YJwLUaXn3v4/maxresdefault.jpg",
+    videoClipLink: "YJwLUaXn3v4",
+  },
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/bdhyJ31QAIo/maxresdefault.jpg",
+    videoClipLink: "bdhyJ31QAIo",
+  },
+  {
+    videoClipThumbnail: "https://i.ytimg.com/vi/RKAg7vpg3n8/maxresdefault.jpg",
+    videoClipLink: "RKAg7vpg3n8",
   },
 ];
