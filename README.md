@@ -14,7 +14,7 @@ The streamers page features video clips of popular streamers and creators of Bat
 
 ## Links for Project
 
-- ### 📌 [LIVE Project Link]()
+- ### 📌 [LIVE Project Link](https://bgmi-india.netlify.app/)
 
 - ### 📌 [YouTube Link](https://youtu.be/6jJogCqIZT0)
 
@@ -48,7 +48,7 @@ The streamers page features video clips of popular streamers and creators of Bat
 
 ![Streamers Page](./src/assets/screencaptures/streamers-page-screenshot.png)
 
-### [VISIT WEBSITE HERE]()
+### [VISIT WEBSITE HERE](https://bgmi-india.netlify.app/)
 
 ### [WATCH DEMO HERE](https://youtu.be/6jJogCqIZT0)
 
